@@ -1,0 +1,47 @@
+
+header {
+    text-align: center;
+    font-family: 'Merriweather', serif;    
+}
+
+.profile-bkgd {
+    margin-bottom: -50%;
+}
+
+.introduction h1 {
+    position: fixed;
+    font-size: 48px;
+    top: 15%;
+    left: 42%;
+    z-index: 1;
+}
+
+h1, h2, h3, h4, h6 {
+    padding-top: 10px;
+}
+
+.connect {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+main {
+    background-color: rgb(252, 240, 228);
+    position: relative;
+    z-index: 1;
+    border-top: 1px solid rgba(0, 0, 0, 0.267);
+}
+
+.project-container {
+    display: inline grid;
+    gap: 50x;
+    grid-template-columns: 120px 120px;
+    grid-template-rows: 120px 120px 120px 120px 120px 120px;
+}
+
+.project {
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    margin: 10px;
+}

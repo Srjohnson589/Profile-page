@@ -20,12 +20,18 @@ body a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    background-image: linear-gradient(to bottom right, rgb(255, 107, 132), rgb(252, 200, 209));
+    padding: 1.5%;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    border-bottom: 1px solid gray;
 }
 
 .navbar a {
     color: rgb(34, 17, 61);
+    font-weight: 600;
 }
 
 .home-btn {
@@ -35,15 +41,15 @@ body a {
 }
 
 .email-btn {
-    font-weight: 500;
-    background-color: rgb(233, 59, 155);
+    background-color: rgb(36, 38, 39);
     padding: 8px 15px;
     border-radius: 5px;
     margin-left: 5px;
 }
 
 .nav-right .email-btn {
-    color: rgb(255, 244, 255);
+    color: rgb(127, 255, 148);
+    font-weight: 500;
 }
 
 header {
@@ -52,22 +58,56 @@ header {
 }
 
 .profile-bkgd {
-    width: 100vw;
-    opacity: .7;
+    width: 105%;
+    margin-bottom: -15%;
+    margin-left: -5%;
+    opacity: .4;
+    z-index: -1;
 }
 
 .introduction {
     position: absolute;
-    left: 8%;
+    right: 25%;
     top: 30%;
-    background-color: rgba(240, 248, 255, 0.514);
     border-radius: 8px;
-    padding: 10px 20px 30px 20px;
+    padding: 20px 30px 50px 30px;
     text-align: left;
+    z-index: 1;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    position: absolute;
+    top: 80px;
+    right: 100px;
+    z-index: 0;
 }
 
 h1, h2, h3, h4, h6 {
     padding-top: 10px;
+}
+
+.introduction h2 {
+    margin-bottom: 20px;
+}
+
+.introduction h1 {
+    line-height: 1.5;
+}
+
+.connect {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+main {
+    background-color: rgb(252, 240, 228);
+    position: relative;
+    z-index: 1;
+    border-top: 1px solid rgba(0, 0, 0, 0.267);
 }
 
 .project-container {
