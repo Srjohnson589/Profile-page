@@ -54,15 +54,13 @@ body a {
 
 header {
     text-align: center;
-    font-family: 'Merriweather', serif;    
+    font-family: 'Merriweather', serif;  
 }
 
-.profile-bkgd {
-    width: 105%;
-    margin-bottom: -15%;
-    margin-left: -5%;
+.background {
+    width: 100%;
     opacity: .4;
-    z-index: -1;
+    overflow: hidden;
 }
 
 .introduction {
@@ -73,6 +71,15 @@ header {
     padding: 20px 30px 50px 30px;
     text-align: left;
     z-index: 1;
+}
+
+.qualification {
+    display: flex;
+    margin: 20px 0;
+}
+
+.qualification img {
+    margin-right: 20px;
 }
 
 .profile-pic {
@@ -96,6 +103,7 @@ h1, h2, h3, h4, h6 {
 
 .introduction h1 {
     line-height: 1.5;
+    font-size: 54px;
 }
 
 .connect {
@@ -103,23 +111,22 @@ h1, h2, h3, h4, h6 {
     font-size: 18px;
 }
 
-main {
-    background-color: rgb(252, 240, 228);
-    position: relative;
+footer {
+    background-color: rgb(255, 250, 245);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 120px;
     z-index: 1;
     border-top: 1px solid rgba(0, 0, 0, 0.267);
 }
 
-.project-container {
-    display: inline grid;
-    gap: 50x;
-    grid-template-columns: 120px 120px;
-    grid-template-rows: 120px 120px 120px 120px 120px 120px;
+.coding-temple {
+    width: 50px;
+    border-radius: 50%;
 }
 
-.project {
-    height: 100px;
-    width: 100px;
-    border: 2px solid black;
-    margin: 10px;
+.academind {
+    width: 70px;
+    border-radius: 10px;
 }
