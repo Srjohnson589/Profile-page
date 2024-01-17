@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+body a {
+    text-decoration: none;
+    padding: 10px;
+}
+
+.navbar {
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-image: linear-gradient(to bottom right, rgb(255, 107, 132), rgb(252, 200, 209));
+}
+
+.navbar a {
+    color: rgb(34, 17, 61);
+}
+
+.home-btn {
+    font-size: 18px;
+    font-weight: 900;
+    margin-right: 5px;
+}
+
+.email-btn {
+    font-weight: 500;
+    background-color: rgb(233, 59, 155);
+    padding: 8px 15px;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+.nav-right .email-btn {
+    color: rgb(255, 244, 255);
+}
+
+header {
+    text-align: center;
+    font-family: 'Merriweather', serif;    
+}
+
+.profile-bkgd {
+    width: 100vw;
+    opacity: .7;
+}
+
+.introduction {
+    position: absolute;
+    left: 8%;
+    top: 30%;
+    background-color: rgba(240, 248, 255, 0.514);
+    border-radius: 8px;
+    padding: 10px 20px 30px 20px;
+    text-align: left;
+}
+
+h1, h2, h3, h4, h6 {
+    padding-top: 10px;
+}
+
+.project-container {
+    display: inline grid;
+    gap: 50x;
+    grid-template-columns: 120px 120px;
+    grid-template-rows: 120px 120px 120px 120px 120px 120px;
+}
+
+.project {
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    margin: 10px;
+}
