@@ -1,8 +1,4 @@
-* {
-    margin: 0;
-    box-sizing: border-box;
-    padding: 0;
-}
+/* Mobile First */
 
 body {
     font-family: 'Open Sans', sans-serif;
@@ -14,11 +10,11 @@ body a {
 }
 
 .navbar {
-    font-size: 14px;
+    font-size: 3rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 5%;
     background-color: white;
     position: sticky;
     top: 0;
@@ -28,13 +24,11 @@ body a {
 
 .navbar a {
     color: rgb(34, 17, 61);
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .home-btn {
-    font-size: 18px;
-    font-weight: 900;
-    margin-right: 5px;
+    display: none;
 }
 
 .email-btn {
@@ -49,13 +43,16 @@ body a {
     font-weight: 500;
 }
 
-main {
-    font-family: 'Merriweather', serif;  
+.page-container {
+    font-family: 'Merriweather', serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .background-img {
     width: 100%;
-    height: 800px;
+    min-width: 990px;
     background-image: url(/images/clement-helardot-95YRwf6CNw8-unsplash.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
@@ -65,23 +62,25 @@ main {
 .overlay {
     background-color: rgba(240, 255, 255, 0.473);
     width: 100%;
-    height: 800px;
+    min-width: 990px;
 
 }
-
 
 .q-grid {
     display: grid;
     width: 70%;
-    grid-template-columns: 100px 500px;
+    grid-template-columns: 80px 500px;
     padding-top: 20px;
-    gap: 15px 5px;
+    gap: 15px 0;
+    align-items: center;
 }
 
 .qualification a {
     padding: 0;
     color: black;
+    text-emphasis: bold;
 }
+
 
 .grid-icon {
     justify-self: center;
@@ -117,6 +116,7 @@ footer {
     background-color: rgb(255, 250, 245);
     z-index: 1;
     border-top: 1px solid rgba(0, 0, 0, 0.267);
+    height: 10vh;
 }
 
 .coding-temple {
@@ -127,4 +127,26 @@ footer {
 .academind {
     width: 70px;
     border-radius: 10px;
+}
+
+
+/* for desktop */
+@media only screen and (min-width: 768px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .navbar {
+        font-size: 1.5rem;
+    }
+
+    .home-btn {
+        font-size: 2rem;
+        font-weight: 900;
+        margin-right: 5px;
+    }
+
+    
 }
